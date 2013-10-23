@@ -1,7 +1,7 @@
 Spoilers
 ========
 
-Mediawiki extension that allows for spoiler tags.
+Mediawiki extension that allows for spoiler tags that will hide a block of text. The spoiler button's show/hide message can be customized for each set.
 
 Installation
 ------------
