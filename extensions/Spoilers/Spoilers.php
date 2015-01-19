@@ -32,6 +32,8 @@ $wgAutoloadClasses['Spoilers']			= "{$extDir}/Spoilers.hooks.php";
 
 $wgHooks['ParserFirstCallInit'][]		= "Spoilers::onParserFirstCallInit";
 
+$wgMessagesDirs['Spoilers'] = __DIR__ .'/i18n';
+
 $wgResourceModules['ext.spoilers'] = array(
 											'localBasePath'	=> __DIR__,
 											'remoteExtPath'	=> 'Spoilers',
