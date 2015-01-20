@@ -1,6 +1,6 @@
 {
 	"@metadata": {
-		"authors": []
+		"authors": ["Tim Aldridge"]
 	},
 	"spoilers": "Spoilers",
 	"spoilers_description": "Spoiler Tag - &lt;spoiler show=\"showMessage\" hide=\"hideMessage\"&gt;Spoiler Text&lt;/spoiler&gt;",

@@ -13,31 +13,30 @@
 /******************************************/
 /* Credits                                */
 /******************************************/
-$credits = array(
-					'path'				=> __FILE__,
-					'name'				=> 'Spoilers',
-					'author'			=> 'Timothy Aldridge',
-					'descriptionmsg'	=> 'spoilers_description',
-					'version'			=> '1.0'
-				);
-$wgExtensionCredits['parserhook'][] = $credits;
+$wgExtensionCredits['specialpage'][] = array(
+												'path'				=>	__FILE__,
+												'name'				=>	'Spoilers',
+												'author'			=>	'Tim Aldridge',
+												'descriptionmsg'	=>	'spoilers_description',
+												'version'			=>	'1.1',
+												'license-name'		=>	'LGPLv3'
+											);
 
 /******************************************/
 /* Language Strings, Page Aliases, Hooks  */
 /******************************************/
 $extDir = dirname(__FILE__);
 
+$wgMessagesDirs['Spoilers'] = __DIR__ .'/i18n';
 $wgExtensionMessagesFiles['Spoilers']	= "{$extDir}/Spoilers.i18n.php";
+
 $wgAutoloadClasses['Spoilers']			= "{$extDir}/Spoilers.hooks.php";
 
-$wgHooks['ParserFirstCallInit'][]		= "Spoilers::onParserFirstCallInit";
-
-$wgMessagesDirs['Spoilers'] = __DIR__ .'/i18n';
-
 $wgResourceModules['ext.spoilers'] = array(
-											'localBasePath'	=> __DIR__,
-											'remoteExtPath'	=> 'Spoilers',
 											'styles'		=> array('css/spoilers.css'),
 											'scripts'		=> array('js/spoilers.js'),
-											'dependencies'	=> array('jquery')
+											'localBasePath'	=> __DIR__,
+											'remoteExtPath'	=> 'Spoilers',
 											);
+
+$wgHooks['ParserFirstCallInit'][]		= "Spoilers::onParserFirstCallInit";
