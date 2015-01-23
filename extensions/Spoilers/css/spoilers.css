@@ -1,23 +1,23 @@
 div.spoilers-body {
     border: 1px dashed #000;
-    background-color: #EEEEEE;
+    background-color: #EEE;
     padding: 3px;
 }
 
 .spoilers-button-container {
-    padding:1px 0px;
+    padding: 1px 0;
 }
 
 .spoilers-button {
-    background-color: #aaa;
+    background-color: #AAA;
     background-repeat: no-repeat;
-    background-image: -webkit-linear-gradient(top, #eee, #aaa);
-    background-image: -moz-linear-gradient(top, #eee, #aaa);
-    background-image: linear-gradient(to bottom, #eee, #aaa);
+    background-image: -webkit-linear-gradient(top, #EEE, #AAA);
+    background-image: -moz-linear-gradient(top, #EEE, #AAA);
+    background-image: linear-gradient(to bottom, #EEE, #AAA);
     border: 1px solid #999;
     border-radius: 5px;
     padding: 3px 10px;
-    transition: .1s background-position linear;
+    transition: 0.1s background-position linear;
 }
 
 .spoilers-button:hover {
