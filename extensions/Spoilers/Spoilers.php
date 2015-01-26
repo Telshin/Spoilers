@@ -36,6 +36,7 @@ $wgResourceModules['ext.spoilers'] = array (
 											'scripts'		=> array( 'js/spoilers.js' ),
 											'localBasePath'	=> __DIR__,
 											'remoteExtPath'	=> 'Spoilers',
+											'dependencies'	=> array()
 											);
 
 $wgHooks['ParserFirstCallInit'][]		= "Spoilers::onParserFirstCallInit";
