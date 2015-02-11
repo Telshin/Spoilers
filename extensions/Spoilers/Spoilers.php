@@ -27,9 +27,9 @@ $wgExtensionCredits['specialpage'][] = array (
 $extDir = dirname( __FILE__ );
 
 $wgMessagesDirs['Spoilers']				= __DIR__ . '/i18n';
-$wgExtensionMessagesFiles['Spoilers']	= "{$extDir}/Spoilers.i18n.php";
+$wgExtensionMessagesFiles['Spoilers']	= $extDir . "/Spoilers.i18n.php";
 
-$wgAutoloadClasses['Spoilers']			= "{$extDir}/Spoilers.hooks.php";
+$wgAutoloadClasses['Spoilers']			= $extDir . "/Spoilers.hooks.php";
 
 $wgResourceModules['ext.spoilers'] = array (
 											'styles'		=> array( 'css/spoilers.css' ),
