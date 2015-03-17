@@ -32,11 +32,11 @@ $wgExtensionMessagesFiles['Spoilers']	= $extDir . "/Spoilers.i18n.php";
 $wgAutoloadClasses['Spoilers']			= $extDir . "/Spoilers.hooks.php";
 
 $wgResourceModules['ext.spoilers'] = array (
-											'styles'		=> array( 'css/spoilers.css' ),
-											'scripts'		=> array( 'js/spoilers.js' ),
+											'styles'		=> [ 'css/spoilers.css' ],
+											'scripts'		=> [ 'js/spoilers.js' ],
 											'localBasePath'	=> __DIR__,
 											'remoteExtPath'	=> 'Spoilers',
-											'dependencies'	=> array()
+											'dependencies'	=> []
 											);
 
 $wgHooks['ParserFirstCallInit'][]		= "Spoilers::onParserFirstCallInit";
