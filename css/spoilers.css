@@ -22,4 +22,5 @@ div.spoilers-body {
 
 .spoilers-button:hover {
 	background-position: 0 -6px;
+	cursor: pointer;
 }
