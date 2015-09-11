@@ -8,6 +8,9 @@
  * @package: Spoilers
  * @link: http://www.mediawiki.org/wiki/Extension:Spoilers
  */
+
+# Only run if included by MediaWiki
+if ( !defined( 'MEDIAWIKI' ) ) die( 'Invalid entry point.' );
  
 /******************************************/
 /* Credits                                */
