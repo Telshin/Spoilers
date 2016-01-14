@@ -20,7 +20,7 @@ $wgExtensionCredits['specialpage'][] = array (
 	'name'				=>	'Spoilers',
 	'author'			=>	'Tim "Telshin" Aldridge',
 	'descriptionmsg'	=>	'spoilers_description',
-	'version'			=>	'1.3',
+	'version'			=>	'1.4',
 	'license-name'		=>	'LGPLv3'
 );
 
