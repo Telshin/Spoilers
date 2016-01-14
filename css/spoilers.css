@@ -2,6 +2,7 @@
 	border: 1px dashed #000;
 	background-color: #EEE;
 	padding: 3px;
+	display: none;
 }
 
 .spoilers-button-container {
@@ -26,4 +27,8 @@
 .spoilers-button:hover {
 	background-position: 0 -6px;
 	cursor: pointer;
+}
+
+.spoilers-hide {
+	display: none;
 }
