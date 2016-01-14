@@ -10,28 +10,6 @@
  */
 class Spoilers {
 	/**
-	 * Hooks Initialized
-	 *
-	 * @var		boolean
-	 */
-	private static $initialized = false;
-
-	/**
-	 * Initiates some needed classes.
-	 *
-	 * @access	public
-	 * @return	void
-	 */
-	static public function init() {
-		global $wgOut;
-
-		if (!self::$initialized) {
-			$wgOut->addModules('ext.spoilers');
-			self::$initialized = true;
-		}
-	}
-
-	/**
 	 * Sets up this extensions parser functions.
 	 *
 	 * @access		public
@@ -41,7 +19,6 @@ class Spoilers {
 	 */
 	static public function onParserFirstCallInit( Parser &$parser ) {
 		$parser->setHook( "spoiler", "Spoilers::parseSpoilerTag" );
-
 		return true;
 	}
 
@@ -56,7 +33,7 @@ class Spoilers {
 	 * @return	string	HTML
 	 */
 	static public function parseSpoilerTag( $input, array $args, Parser $parser, PPFrame $frame ) {
-		self::init();
+		$parser->getOutput()->addmodules('ext.spoilers');
 		$renderedInput = $parser->recursiveTagParse( $input );
 		$output =	"<div class='spoilers'>
 						<div class='spoilers-button-container'>
