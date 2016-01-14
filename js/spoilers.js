@@ -1,17 +1,12 @@
-function Spoilers($) {
+(function($) {
 	'use strict';
 
-	this.init = function() {
-		$('.spoilers-button').on('click', spoiler.reveal);
-	};
-
-	var spoiler = {
-		reveal: function() {
-			$(this).parents('.spoilers').find('.spoilers-body').toggle();
+	function init() {
+		$('.spoilers-button').click(function() {
+			$(this).parents('.spoilers').children('.spoilers-body').toggle();
 			$(this).children().toggle();
-		}
+		});
 	}
-}
 
-var SE = new Spoilers(jQuery);
-jQuery(document).ready(SE.init);
+	$(init);
+}(this.jQuery));
