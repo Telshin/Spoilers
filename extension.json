@@ -1,7 +1,10 @@
 {
 	"name": "Spoilers",
 	"version": "1.4",
-	"author": "Tim \"Telshin\" Aldridge",
+	"author": [
+		"Tim \"Telshin\" Aldridge",
+		"Kris (Cbalir91)"
+	],
 	"descriptionmsg": "spoilers_description",
 	"license-name": "LGPLv3",
 	"type": "specialpage",
