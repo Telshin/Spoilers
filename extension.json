@@ -1,6 +1,6 @@
 {
 	"name": "Spoilers",
-	"version": "1.2",
+	"version": "1.3",
 	"author": "Tim \"Telshin\" Aldridge",
 	"descriptionmsg": "spoilers_description",
 	"license-name": "LGPLv3",
@@ -9,9 +9,6 @@
 		"Spoilers": [
 			"i18n"
 		]
-	},
-	"ExtensionMessagesFiles": {
-		"Spoilers": "Spoilers.i18n.php"
 	},
 	"AutoloadClasses": {
 		"Spoilers": "Spoilers.hooks.php"
@@ -28,12 +25,13 @@
 		}
 	},
 	"ResourceFileModulePaths": {
-		"localBasePath": "",
+		"localBasePath": "/",
 		"remoteExtPath": "Spoilers"
 	},
 	"Hooks": {
 		"ParserFirstCallInit": [
 			"Spoilers::onParserFirstCallInit"
 		]
-	}
+	},
+	"manifest_version": 1
 }
