@@ -41,10 +41,10 @@ class Spoilers {
 						<div class='spoilers-button-container'>
 							<span class='spoilers-button'>
 								<span class='spoilers-show'>{$showText}</span>
-								<span class='spoilers-hide' style='display:none;'>{$hideText}</span>
+								<span class='spoilers-hide'>{$hideText}</span>
 							</span>
 						</div>
-						<div class='spoilers-body' style='display:none;'>{$renderedInput}</div>
+						<div class='spoilers-body'>{$renderedInput}</div>
 					</div>";
 		return $output;
 	}
