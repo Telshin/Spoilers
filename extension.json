@@ -10,6 +10,9 @@
 			"i18n"
 		]
 	},
+	"ExtensionMessagesFiles": {
+		"Spoilers": "Spoilers.i18n.php"
+	},
 	"AutoloadClasses": {
 		"Spoilers": "Spoilers.hooks.php"
 	},
