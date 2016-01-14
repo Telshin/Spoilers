@@ -35,11 +35,13 @@ class Spoilers {
 	static public function parseSpoilerTag( $input, array $args, Parser $parser, PPFrame $frame ) {
 		$parser->getOutput()->addModules('ext.spoilers');
 		$renderedInput = $parser->recursiveTagParse( $input, $frame );
+		$showText =	isset($args['show']) ? htmlentities( $args['show'], ENT_QUOTES) : wfMessage('spoilers_show_default' )->text();
+		$hideText =	isset($args['hide']) ? htmlentities( $args['hide'], ENT_QUOTES ) : wfMessage('spoilers_hide_default')->text();
 		$output =	"<div class='spoilers'>
 						<div class='spoilers-button-container'>
 							<span class='spoilers-button'>
-								<span class='spoilers-show'>" . ( $args['show'] ? htmlentities( $args['show'], ENT_QUOTES) : wfMessage('spoilers_show_default' )->text() ) . "</span>
-								<span class='spoilers-hide' style='display:none;'>" . ( $args['hide'] ? htmlentities( $args['hide'], ENT_QUOTES ) : wfMessage('spoilers_hide_default')->text() ) . "</span>
+								<span class='spoilers-show'>{$showText}</span>
+								<span class='spoilers-hide' style='display:none;'>{$hideText}</span>
 							</span>
 						</div>
 						<div class='spoilers-body' style='display:none;'>{$renderedInput}</div>
