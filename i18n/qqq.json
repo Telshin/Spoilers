@@ -2,8 +2,7 @@
 	"@metadata": {
 		"authors": ["Tim Aldridge"]
 	},
-	"spoilers": "Extension Name",
-	"spoilers_description": "Extension Description",
-	"spoilers_show_default": "Show button default text",
-	"spoilers_hide_default": "Hide button default text"
+	"spoilers_description": "{{desc|what=extension|name=Spoilers|url=https://www.mediawiki.org/wiki/Extension:Spoilers}}",
+	"spoilers_show_default": "{{Identical|Show button default text}}",
+	"spoilers_hide_default": "{{Identical|Hide button default text}}"
 }
