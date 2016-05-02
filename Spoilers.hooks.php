@@ -39,12 +39,7 @@ class Spoilers {
 		$hideText	=	isset( $args['hide'] ) ? " data-hidetext='" . htmlentities( $args['hide'], ENT_QUOTES ) . "'" : "";
 		$output		=	"
 <div class='spoilers'{$showText}{$hideText}
-	<div class='spoilers-button-container'>
-		<span class='spoilers-button'>
-			<span class='spoilers-show'>{$showText}</span>
-			<span class='spoilers-hide'>{$hideText}</span>
-		</span>
-	</div>
+	<span class='spoilers-button'></span>
 	<div class='spoilers-body'>{$renderedInput}</div>
 </div>";
 		return $output;
