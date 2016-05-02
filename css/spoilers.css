@@ -5,10 +5,6 @@
 	display: none;
 }
 
-.spoilers-button-container {
-	padding: 1px 0;
-}
-
 .spoilers-button {
 	background: #AAA;
 	background: -moz-linear-gradient(top, #EEE, #AAA);
@@ -27,8 +23,4 @@
 .spoilers-button:hover {
 	background-position: 0 -6px;
 	cursor: pointer;
-}
-
-.spoilers-hide {
-	display: none;
 }
