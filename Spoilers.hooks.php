@@ -3,7 +3,7 @@
  * Spoilers
  * Spoilers Hooks
  *
- * @author: Telshin
+ * @author: Telshin, Cblair91
  * @license: LGPLv3 http://opensource.org/licenses/lgpl-3.0.html
  * @package: Spoilers
  * @link: http://www.mediawiki.org/wiki/Extension:Spoilers
@@ -33,19 +33,20 @@ class Spoilers {
 	 * @return	string	HTML
 	 */
 	static public function parseSpoilerTag( $input, array $args, Parser $parser, PPFrame $frame ) {
-		$parser->getOutput()->addModules('ext.spoilers');
+		$parser->getOutput()->addModules( 'ext.spoilers' );
 		$renderedInput = $parser->recursiveTagParse( $input, $frame );
-		$showText =	isset($args['show']) ? htmlentities( $args['show'], ENT_QUOTES) : wfMessage('spoilers_show_default' )->text();
-		$hideText =	isset($args['hide']) ? htmlentities( $args['hide'], ENT_QUOTES ) : wfMessage('spoilers_hide_default')->text();
-		$output =	"<div class='spoilers'>
-						<div class='spoilers-button-container'>
-							<span class='spoilers-button'>
-								<span class='spoilers-show'>{$showText}</span>
-								<span class='spoilers-hide'>{$hideText}</span>
-							</span>
-						</div>
-						<div class='spoilers-body'>{$renderedInput}</div>
-					</div>";
+		$showText	=	isset( $args['show'] ) ? " data-showtext='" . htmlentities( $args['show'], ENT_QUOTES ) . "'" : "";
+		$hideText	=	isset( $args['hide'] ) ? " data-hidetext='" . htmlentities( $args['hide'], ENT_QUOTES ) . "'" : "";
+		$output		=	"
+<div class='spoilers'{$showText}{$hideText}
+	<div class='spoilers-button-container'>
+		<span class='spoilers-button'>
+			<span class='spoilers-show'>{$showText}</span>
+			<span class='spoilers-hide'>{$hideText}</span>
+		</span>
+	</div>
+	<div class='spoilers-body'>{$renderedInput}</div>
+</div>";
 		return $output;
 	}
 }
