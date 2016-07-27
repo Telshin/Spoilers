@@ -1,9 +1,9 @@
 {
 	"name": "Spoilers",
-	"version": "1.4",
+	"version": "1.4.1",
 	"author": [
 		"Tim \"Telshin\" Aldridge",
-		"Kris (cblair91)"
+		"Kris (Developaws)"
 	],
 	"descriptionmsg": "spoilers_description",
 	"license-name": "LGPLv3",
