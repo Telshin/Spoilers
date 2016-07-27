@@ -15,12 +15,12 @@ if ( !defined( 'MEDIAWIKI' ) ) die( 'Invalid entry point.' );
 /******************************************/
 /* Credits                                */
 /******************************************/
-$wgExtensionCredits['specialpage'][] = array (
+$wgExtensionCredits['specialpage'][] = array(
 	'path'				=>	__FILE__,
 	'name'				=>	'Spoilers',
-	'author'			=>	'Tim "Telshin" Aldridge',
+	'author'			=>	array('Tim "Telshin" Aldridge', 'Kris (Developaws)'),
 	'descriptionmsg'	=>	'spoilers_description',
-	'version'			=>	'1.4',
+	'version'			=>	'1.4.1',
 	'license-name'		=>	'LGPLv3'
 );
 
@@ -34,7 +34,7 @@ $wgExtensionMessagesFiles['Spoilers']	= __DIR__ . "/Spoilers.i18n.php";
 $wgAutoloadClasses['Spoilers']			= __DIR__ . "/Spoilers.hooks.php";
 
 // Resources Modules
-$wgResourceModules['ext.spoilers'] = array (
+$wgResourceModules['ext.spoilers'] = array(
 	'styles'		=> array( 'css/spoilers.css' ),
 	'scripts'		=> array( 'js/spoilers.js' ),
 	'localBasePath'	=> __DIR__,
