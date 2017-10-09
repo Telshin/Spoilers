@@ -6,7 +6,7 @@
 		"Kris (Developaws)"
 	],
 	"descriptionmsg": "spoilers_description",
-	"license-name": "LGPLv3",
+	"license-name": "MIT",
 	"type": "specialpage",
 	"MessagesDirs": {
 		"Spoilers": [

@@ -4,7 +4,7 @@
  * Spoilers Mediawiki Settings
  *
  * @author: Telshin
- * @license: LGPLv3 http://opensource.org/licenses/lgpl-3.0.html
+ * @license: MIT https://opensource.org/licenses/MIT
  * @package: Spoilers
  * @link: http://www.mediawiki.org/wiki/Extension:Spoilers
  */
@@ -21,7 +21,7 @@ $wgExtensionCredits['specialpage'][] = array(
 	'author'			=>	array('Tim "Telshin" Aldridge', 'Kris (Developaws)'),
 	'descriptionmsg'	=>	'spoilers_description',
 	'version'			=>	'1.4.1',
-	'license-name'		=>	'LGPLv3'
+	'license-name'		=>	'MIT'
 );
 
 /******************************************/
