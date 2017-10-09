@@ -1,20 +1,21 @@
 {
 	"name": "Spoilers",
-	"version": "1.4",
+	"version": "2.0",
 	"author": [
 		"Tim \"Telshin\" Aldridge",
-		"Kris (cblair91)"
+		"Kris \"Developaws\" Blair"
 	],
+	"url": "http://www.mediawiki.org/wiki/Extension:Spoilers",
 	"descriptionmsg": "spoilers_description",
-	"license-name": "LGPLv3",
-	"type": "specialpage",
+	"license-name": "LGPL-3.0",
+	"type": "parserhook",
+	"requires": {
+		"MediaWiki": ">= 1.27.0"
+	},
 	"MessagesDirs": {
 		"Spoilers": [
 			"i18n"
 		]
-	},
-	"ExtensionMessagesFiles": {
-		"Spoilers": "Spoilers.i18n.php"
 	},
 	"AutoloadClasses": {
 		"Spoilers": "Spoilers.hooks.php"
@@ -22,16 +23,26 @@
 	"ResourceModules": {
 		"ext.spoilers": {
 			"styles": [
-				"css/spoilers.css"
+				"resources/spoilers.css"
 			],
 			"scripts": [
-				"js/spoilers.js"
+				"resources/mw.Spoilers.js"
 			],
-			"dependencies": []
+			"messages": [
+				"spoilers_hide_default",
+				"spoilers_show_default"
+			],
+			"targets": [
+				"desktop",
+				"mobile"
+			],
+			"dependencies": [
+				"mediawiki.jqueryMsg"
+			]
 		}
 	},
 	"ResourceFileModulePaths": {
-		"localBasePath": "/",
+		"localBasePath": "",
 		"remoteExtPath": "Spoilers"
 	},
 	"Hooks": {
