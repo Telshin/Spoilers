@@ -17,11 +17,11 @@
 			"i18n"
 		]
 	},
+	"ExtensionMessagesFiles": {
+		"SpoilersMagic": "Spoilers.i18n.magic.php"
+	},
 	"AutoloadClasses": {
 		"Spoilers": "Spoilers.hooks.php"
-	},
-	"ExtensionMessageFiles": {
-		"Spoilers": "Spoilers.i18n.magic.php"
 	},
 	"ResourceModules": {
 		"ext.spoilers": {
