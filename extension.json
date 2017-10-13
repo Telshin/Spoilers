@@ -7,7 +7,7 @@
 	],
 	"url": "http://www.mediawiki.org/wiki/Extension:Spoilers",
 	"descriptionmsg": "spoilers_description",
-	"license-name": "LGPL-3.0",
+	"license-name": "MIT",
 	"type": "parserhook",
 	"requires": {
 		"MediaWiki": ">= 1.27.0"
@@ -17,24 +17,23 @@
 			"i18n"
 		]
 	},
+	"ExtensionMessagesFiles": {
+		"SpoilersMagic": "Spoilers.i18n.magic.php"
+	},
 	"AutoloadClasses": {
 		"Spoilers": "Spoilers.hooks.php"
 	},
 	"ResourceModules": {
 		"ext.spoilers": {
 			"styles": [
-				"resources/spoilers.css"
+				"spoilers.css"
 			],
 			"scripts": [
-				"resources/mw.Spoilers.js"
+				"mw.Spoilers.js"
 			],
 			"messages": [
 				"spoilers_hide_default",
 				"spoilers_show_default"
-			],
-			"targets": [
-				"desktop",
-				"mobile"
 			],
 			"dependencies": [
 				"mediawiki.jqueryMsg"
@@ -42,8 +41,8 @@
 		}
 	},
 	"ResourceFileModulePaths": {
-		"localBasePath": "",
-		"remoteExtPath": "Spoilers"
+		"localBasePath": "resources",
+		"remoteExtPath": "Spoilers/resources"
 	},
 	"Hooks": {
 		"ParserFirstCallInit": [

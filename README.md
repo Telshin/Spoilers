@@ -1,6 +1,6 @@
 Spoilers
 ========
-Mediawiki extension that allows for spoiler tags that will hide a block of text. The spoiler button's show/hide message can be customized for each set.
+MediaWiki extension that allows for spoiler tags that will hide a block of text. The spoiler button's show/hide message can be customized for each set.
 
 Installation
 ------------
@@ -13,8 +13,8 @@ wfLoadExtension('Spoilers');
 Usage Example
 -------------
 ```
-<spoiler hide="hide_message">spoiler_text</spoiler>
-<spoiler show="show_message">spoiler_text</spoiler>
-<spoiler show="show_message" hide="hide_message">spoiler_text</spoiler>
-<spoiler>spoiler_text</spoiler>
+{{#spoiler:hide=hide_message|spoiler_text}}
+{{#spoiler:show=show_message|spoiler_text}}
+{{#spoiler:show=show_message hide=hide_message|spoiler_text}}
+{{#spoiler:spoiler_text}}
 ```

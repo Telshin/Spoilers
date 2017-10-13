@@ -8,12 +8,10 @@
 .spoilers-button {
 	background: #AAA;
 	background: -moz-linear-gradient(top, #EEE, #AAA);
-	background: -webkit-gradient(left top, left bottom, color-stop(0%, #EEE), color-stop(100%, #AAA));
 	background: -webkit-linear-gradient(top, #EEE, #AAA);
 	background: -o-linear-gradient(top, #EEE, #AAA);
-	background: -ms-liner-gradient(top, #EEE, #AAA);
 	background: linear-gradient(to bottom, #EEE, #AAA);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#EEE', endColorstr='#AAA',GradientType=0 );
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#EEE', endColorstr='#AAA', GradientType=0);
 	border: 1px solid #999;
 	border-radius: 5px;
 	padding: 3px 10px;
