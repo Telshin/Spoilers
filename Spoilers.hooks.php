@@ -41,8 +41,7 @@ class Spoilers {
 </div>";
 		return [
 			'text'		=> $output,
-			'noparse'	=> true,
-			'isHTML'	=> true
+			'noparse'	=> true
 		];
 	}
 
