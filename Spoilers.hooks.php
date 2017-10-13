@@ -37,7 +37,7 @@ class Spoilers {
 		$hideText	=	isset( $params['hide'] ) ? " data-hidetext='" . htmlentities( $params['hide'], ENT_QUOTES ) . "'" : "";
 		$output		=	"<div class='spoilers'{$showText}{$hideText}>
 	<span class='spoilers-button'></span>
-	<div class='spoilers-body' style='display:none;'>{$params['1']}</div>
+	<div class='spoilers-body' style='display:none;'>{$frame->expand($params['1'])}</div>
 </div>";
 		return $parser->insertStripItem( $output );
 	}
@@ -45,14 +45,14 @@ class Spoilers {
 	static function extractOptions( array $options, PPFrame $frame ) {
 		$results = [];
 		foreach ( $options as $option ) {
-			$pair = explode( '=', $option, 2 );
+			$pair = explode( '=', $frame->expand( $option ), 2 );
 			if ( count( $pair ) === 2 ) {
 				$name = trim( $pair[0] );
-				$value = trim( $frame->expand( $pair[1] ) );
+				$value = trim( $pair[1] );
 				$results[$name] = $value;
 			}
 			if ( count( $pair ) === 1 ) {
-				$value = trim( $frame->expand( $pair[0] ) );
+				$value = trim( $pair[0] );
 				$results['1'] = $value;
 			}
 		}
