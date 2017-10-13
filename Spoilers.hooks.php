@@ -53,7 +53,6 @@ class Spoilers {
 				$results['text'] = trim( $pair[0] );
 			}
 		}
-		print_r($results);
 		return $results;
 	}
 }
