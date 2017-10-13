@@ -43,7 +43,7 @@ class Spoilers {
 		return [
 			'text'		=> $output,
 			'noparse'	=> false,
-			'isHTML'	=> false
+			'isHTML'	=> true
 		];
 	}
 
