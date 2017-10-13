@@ -57,6 +57,7 @@ class Spoilers {
 				$results['1'] = $value;
 			}
 		}
+		print_r($results);
 		return $results;
 	}
 }
