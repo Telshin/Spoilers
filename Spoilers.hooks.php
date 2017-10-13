@@ -46,7 +46,7 @@ class Spoilers {
 	static function extractOptions( array $options, PPFrame $frame ) {
 		$results = [];
 		foreach ( $options as $option ) {
-			$pair = explode( '=', $frame->expand( $option ), 2 );
+			$pair = explode( '=', $option, 2 );
 			if ( count( $pair ) === 2 ) {
 				$name = trim( $pair[0] );
 				$value = trim( $pair[1] );
@@ -54,7 +54,7 @@ class Spoilers {
 			}
 			if ( count( $pair ) === 1 ) {
 				$value = trim( $pair[0] );
-				$results['1'] = $value;
+				$results['1'] = $frame->expand( $value );
 			}
 		}
 		return $results;
