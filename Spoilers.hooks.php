@@ -35,7 +35,7 @@ class Spoilers {
 		$parser->getOutput()->addModules( 'ext.spoilers' );
 		$showText	=	isset( $params['show'] ) ? " data-showtext='" . htmlentities( $params['show'], ENT_QUOTES ) . "'" : "";
 		$hideText	=	isset( $params['hide'] ) ? " data-hidetext='" . htmlentities( $params['hide'], ENT_QUOTES ) . "'" : "";
-		$output		=	"<div class='spoilers'{$showText}{$hideText}><span class='spoilers-button'></span><div class='spoilers-body' style='display:none;'>{$frame->expand($args[0])}</div></div>";
+		$output		=	"<div class='spoilers'{$showText}{$hideText}><span class='spoilers-button'></span><div class='spoilers-body' style='display:none;'>{$frame->expand($params[0])}</div></div>";
 		return [
 			'text'		=> $output,
 			'noparse'	=> true
@@ -47,9 +47,9 @@ class Spoilers {
 		foreach ( $options as $option ) {
 			$pair = explode( '=', $frame->expand( $option ), 2 );
 			if ( count( $pair ) === 2 ) {
-				$name = trim( $pair[0] );
-				$value = trim( $pair[1] );
-				$results[$name] = $value;
+				$results[trim( $pair[0] )] = trim( $pair[1] );
+			} else if ( count ( $pair ) === 1 ) {
+				$results['text'] = trim( $pair[0] );
 			}
 		}
 		return $results;
