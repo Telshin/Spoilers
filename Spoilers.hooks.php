@@ -41,8 +41,9 @@ class Spoilers {
 	<div class='spoilers-body' style='display:none;'>{$frame->expand($args[0])}</div>
 </div>";
 		return [
-			$output,
-			'noparse'=>false
+			'text'=>$output,
+			'noparse'=>false,
+			'nowiki'=>false
 		];
 	}
 
