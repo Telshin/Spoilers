@@ -49,12 +49,12 @@ class Spoilers {
 			$pair = explode( '=', $option, 2 );
 			if ( count( $pair ) === 2 ) {
 				$name = trim( $pair[0] );
-				$value = trim( $pair[1] );
+				$value = trim( $frame->expand( $pair[1] ) );
 				$results[$name] = $value;
 			}
 			if ( count( $pair ) === 1 ) {
-				$value = trim( $pair[0] );
-				$results['1'] = $frame->expand( $value );
+				$value = trim( $frame->expand( $pair[0] ) );
+				$results['1'] = $value;
 			}
 		}
 		return $results;
