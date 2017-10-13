@@ -28,7 +28,7 @@ class Spoilers {
 	 * @param	Parser	$parser
 	 * @param	PPFrame	$frame
 	 * @param	array	$args
-	 * @return	string	HTML
+	 * @return	array	HTML
 	 */
 	static public function spoilerMagicWord( Parser &$parser, PPFrame $frame, array $args ) {
 		//$params = self::extractOptions( $args, $frame );
@@ -40,7 +40,10 @@ class Spoilers {
 	<span class='spoilers-button'></span>
 	<div class='spoilers-body' style='display:none;'>{$frame->expand($args[0])}</div>
 </div>";
-		return $output;
+		return [
+			$output,
+			'noparse'=>false
+		];
 	}
 
 	/*static function extractOptions( array $options, PPFrame $frame ) {
