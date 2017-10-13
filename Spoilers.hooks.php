@@ -31,14 +31,13 @@ class Spoilers {
 	 * @return	array	HTML
 	 */
 	static public function spoilerMagicWord( Parser &$parser, PPFrame $frame, array $args ) {
-		//$params = self::extractOptions( $args, $frame );
+		$params = self::extractOptions( $args, $frame );
 		$parser->getOutput()->addModules( 'ext.spoilers' );
-		//$showText	=	isset( $params['show'] ) ? " data-showtext='" . htmlentities( $params['show'], ENT_QUOTES ) . "'" : "";
-		//$hideText	=	isset( $params['hide'] ) ? " data-hidetext='" . htmlentities( $params['hide'], ENT_QUOTES ) . "'" : "";
-		//$output		=	"<div class='spoilers'{$showText}{$hideText}>
-		$output		=	"<div class='spoilers'
+		$showText	=	isset( $params['show'] ) ? " data-showtext='" . htmlentities( $params['show'], ENT_QUOTES ) . "'" : "";
+		$hideText	=	isset( $params['hide'] ) ? " data-hidetext='" . htmlentities( $params['hide'], ENT_QUOTES ) . "'" : "";
+		$output		=	"<div class='spoilers'{$showText}{$hideText}>
 	<span class='spoilers-button'></span>
-	<div class='spoilers-body' style='display:none;'>{$args[0]}</div>
+	<div class='spoilers-body' style='display:none;'>{$frame->expand($args[0])}</div>
 </div>";
 		return [
 			'text'		=> $output,
@@ -47,7 +46,7 @@ class Spoilers {
 		];
 	}
 
-	/*static function extractOptions( array $options, PPFrame $frame ) {
+	static function extractOptions( array $options, PPFrame $frame ) {
 		$results = [];
 		foreach ( $options as $option ) {
 			$pair = explode( '=', $frame->expand( $option ), 2 );
@@ -56,11 +55,7 @@ class Spoilers {
 				$value = trim( $pair[1] );
 				$results[$name] = $value;
 			}
-			if ( count( $pair ) === 1 ) {
-				$value = trim( $pair[0] );
-				$results['1'] = $value;
-			}
 		}
 		return $results;
-	}*/
+	}
 }
