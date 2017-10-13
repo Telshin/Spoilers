@@ -35,12 +35,11 @@ class Spoilers {
 		$parser->getOutput()->addModules( 'ext.spoilers' );
 		$showText	=	isset( $params['show'] ) ? " data-showtext='" . htmlentities( $params['show'], ENT_QUOTES ) . "'" : "";
 		$hideText	=	isset( $params['hide'] ) ? " data-hidetext='" . htmlentities( $params['hide'], ENT_QUOTES ) . "'" : "";
-		$output		=	"<div class='spoilers' {$showText}{$hideText}><span class='spoilers-button'></span><div class='spoilers-body' style='display:none;'>{$params['1']}</div></div>";
-		return [
-			'text'		=> $output,
-			'noparse'	=> true,
-			'isHTML'	=> true
-		];
+		$output		=	"<div class='spoilers'{$showText}{$hideText}>
+	<span class='spoilers-button'></span>
+	<div class='spoilers-body' style='display:none;'>{$params['1']}</div>
+</div>";
+		return $parser->insertStripItem( $output );
 	}
 
 	static function extractOptions( array $options, PPFrame $frame ) {
