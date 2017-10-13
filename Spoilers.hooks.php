@@ -37,7 +37,7 @@ class Spoilers {
 		$hideText	=	isset( $params['hide'] ) ? " data-hidetext='" . htmlentities( $params['hide'], ENT_QUOTES ) . "'" : "";
 		$output		=	"<div class='spoilers'{$showText}{$hideText}>
 	<span class='spoilers-button'></span>
-	<div class='spoilers-body' style='display:none;'>{$frame->expand($params['1'])}</div>
+	<div class='spoilers-body' style='display:none;'>{$parser->recursiveTagParse($params['1'], $frame)}</div>
 </div>";
 		return $parser->insertStripItem( $output );
 	}
