@@ -17,7 +17,7 @@ class Spoilers {
 	 * @return		boolean	true
 	 */
 	static public function onParserFirstCallInit( Parser &$parser ) {
-		$parser->setFunctionHook( "spoiler", [__CLASS__, "parseSpoilerTag"], Parser::SFH_OBJECT_ARGS );
+		$parser->setFunctionHook( "spoiler", [__CLASS__, "spoilerMagicWord"], Parser::SFH_OBJECT_ARGS );
 		return true;
 	}
 
