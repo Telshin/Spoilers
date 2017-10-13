@@ -1,6 +1,8 @@
 {
 	"@metadata": {
-		"authors": ["Kris Blair"]
+		"authors": [
+			"Kris Blair"
+		]
 	},
 	"spoilers": "Spoilers",
 	"spoilers_description": "Balise de spoiler - &lt;spoiler show=\"showMessage\" hide=\"hideMessage\"&gt;Texte du spoiler&lt;/spoiler&gt;",

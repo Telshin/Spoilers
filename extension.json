@@ -1,20 +1,24 @@
 {
 	"name": "Spoilers",
-	"version": "1.4.1",
+	"version": "2.0",
 	"author": [
 		"Tim \"Telshin\" Aldridge",
-		"Kris (Developaws)"
+		"Kris \"Developaws\" Blair"
 	],
+	"url": "http://www.mediawiki.org/wiki/Extension:Spoilers",
 	"descriptionmsg": "spoilers_description",
 	"license-name": "MIT",
-	"type": "specialpage",
+	"type": "parserhook",
+	"requires": {
+		"MediaWiki": ">= 1.27.0"
+	},
 	"MessagesDirs": {
 		"Spoilers": [
 			"i18n"
 		]
 	},
 	"ExtensionMessagesFiles": {
-		"Spoilers": "Spoilers.i18n.php"
+		"SpoilersMagic": "Spoilers.i18n.magic.php"
 	},
 	"AutoloadClasses": {
 		"Spoilers": "Spoilers.hooks.php"
@@ -22,17 +26,23 @@
 	"ResourceModules": {
 		"ext.spoilers": {
 			"styles": [
-				"css/spoilers.css"
+				"spoilers.css"
 			],
 			"scripts": [
-				"js/spoilers.js"
+				"mw.Spoilers.js"
 			],
-			"dependencies": []
+			"messages": [
+				"spoilers_hide_default",
+				"spoilers_show_default"
+			],
+			"dependencies": [
+				"mediawiki.jqueryMsg"
+			]
 		}
 	},
 	"ResourceFileModulePaths": {
-		"localBasePath": "/",
-		"remoteExtPath": "Spoilers"
+		"localBasePath": "resources",
+		"remoteExtPath": "Spoilers/resources"
 	},
 	"Hooks": {
 		"ParserFirstCallInit": [
