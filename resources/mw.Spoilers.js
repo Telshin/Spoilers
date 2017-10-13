@@ -6,6 +6,7 @@
 		$spoilerButton.each( function() {
 			var $parent = $( this ).parent();
 			$parent.children( '.spoilers-button' ).text( $parent.data( 'showtext' ) || mw.msg( 'spoilers_show_default' ) );
+			$parent.data( 'shown', false );
 		});
 		$spoilerButton.click( function() {
 			var $parent = $( this ).parent(),
