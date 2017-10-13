@@ -28,7 +28,7 @@ class Spoilers {
 	 * @param	Parser	$parser
 	 * @param	PPFrame	$frame
 	 * @param	array	$args
-	 * @return	array	HTML
+	 * @return	string	HTML
 	 */
 	static public function spoilerMagicWord( Parser &$parser, PPFrame $frame, array $args ) {
 		$params = self::extractOptions( $args, $frame );
@@ -37,9 +37,9 @@ class Spoilers {
 		$hideText	=	isset( $params['hide'] ) ? " data-hidetext='" . htmlentities( $params['hide'], ENT_QUOTES ) . "'" : "";
 		$output		=	"<div class='spoilers'{$showText}{$hideText}>
 	<span class='spoilers-button'></span>
-	<div class='spoilers-body' style='display:none;'>{$parser->recursiveTagParse($params['1'], $frame)}</div>
+	<div class='spoilers-body' style='display:none;'>{$frame->expand($params['1'])}</div>
 </div>";
-		return $parser->insertStripItem( $output );
+		return $output;
 	}
 
 	static function extractOptions( array $options, PPFrame $frame ) {
