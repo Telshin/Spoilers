@@ -4,7 +4,7 @@
  * Spoilers Hooks
  *
  * @author: Telshin, Developaws
- * @license: LGPL-3.0 http://opensource.org/licenses/lgpl-3.0.html
+ * @license: MIT https://opensource.org/licenses/MIT
  * @package: Spoilers
  * @link: http://www.mediawiki.org/wiki/Extension:Spoilers
  */
