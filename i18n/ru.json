@@ -5,7 +5,6 @@
 			"Kris Blair"
 		]
 	},
-	"spoiler": "spoiler",
 	"spoilers": "Spoilers",
 	"spoilers_description": "Тег спойлера - &lt;spoiler show=\"showMessage\" hide=\"hideMessage\"&gt;Скрытый текст&lt;/spoiler&gt;",
 	"spoilers_show_default": "Показать спойлер",

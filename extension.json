@@ -20,6 +20,9 @@
 	"AutoloadClasses": {
 		"Spoilers": "Spoilers.hooks.php"
 	},
+	"ExtensionMessageFiles": {
+		"Spoilers": "Spolers.i18n.magic.php"
+	},
 	"ResourceModules": {
 		"ext.spoilers": {
 			"styles": [

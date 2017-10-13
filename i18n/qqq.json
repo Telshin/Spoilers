@@ -5,7 +5,6 @@
 			"Kris Blair"
 		]
 	},
-	"spoiler": "spoiler",
 	"spoilers": "Spoilers",
 	"spoilers_description": "{{desc|what=extension|name=Spoilers|url=https://www.mediawiki.org/wiki/Extension:Spoilers}}",
 	"spoilers_show_default": "{{Identical|Show button default text}}",
