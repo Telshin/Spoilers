@@ -38,12 +38,12 @@ class Spoilers {
 		//$output		=	"<div class='spoilers'{$showText}{$hideText}>
 		$output		=	"<div class='spoilers'
 	<span class='spoilers-button'></span>
-	<div class='spoilers-body' style='display:none;'>{$frame->expand($args[0])}</div>
+	<div class='spoilers-body' style='display:none;'>{$args[0]}</div>
 </div>";
 		return [
-			'text'=>$output,
-			'noparse'=>false,
-			'nowiki'=>false
+			'text'		=> $output,
+			'noparse'	=> false,
+			'isHTML'	=> false
 		];
 	}
 
