@@ -30,13 +30,12 @@ class Spoilers {
 	 * @param	array	$args
 	 * @return	array	HTML
 	 */
-	static public function spoilerMagicWord( Parser &$parser, PPFrame &$frame, array $args ) {
+	static public function spoilerMagicWord( Parser &$parser, PPFrame $frame, array $args ) {
 		$params = self::extractOptions( $args, $frame );
 		$parser->getOutput()->addModules( 'ext.spoilers' );
 		$showText	=	isset( $params['show'] ) ? " data-showtext='" . htmlentities( $params['show'], ENT_QUOTES ) . "'" : "";
 		$hideText	=	isset( $params['hide'] ) ? " data-hidetext='" . htmlentities( $params['hide'], ENT_QUOTES ) . "'" : "";
-		$output		=	"
-<div class='spoilers'{$showText}{$hideText}
+		$output		=	"<div class='spoilers'{$showText}{$hideText}
 	<span class='spoilers-button'></span>
 	<div class='spoilers-body'>{$params['1']}</div>
 </div>";

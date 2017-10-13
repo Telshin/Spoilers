@@ -26,18 +26,14 @@
 	"ResourceModules": {
 		"ext.spoilers": {
 			"styles": [
-				"resources/spoilers.css"
+				"spoilers.css"
 			],
 			"scripts": [
-				"resources/mw.Spoilers.js"
+				"mw.Spoilers.js"
 			],
 			"messages": [
 				"spoilers_hide_default",
 				"spoilers_show_default"
-			],
-			"targets": [
-				"desktop",
-				"mobile"
 			],
 			"dependencies": [
 				"mediawiki.jqueryMsg"
@@ -45,8 +41,8 @@
 		}
 	},
 	"ResourceFileModulePaths": {
-		"localBasePath": "",
-		"remoteExtPath": "Spoilers"
+		"localBasePath": "resources",
+		"remoteExtPath": "Spoilers/resources"
 	},
 	"Hooks": {
 		"ParserFirstCallInit": [
