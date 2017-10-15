@@ -43,6 +43,13 @@ class Spoilers {
 		];
 	}
 
+	/**
+	 * Extracts a set of parameters
+	 *
+	 * @param	array	$options
+	 * @param	PPFrame	$frame
+	 * @return	array	Parameters
+	 */
 	static function extractOptions( array $options, PPFrame $frame ) {
 		$results = [];
 		foreach ( $options as $option ) {
