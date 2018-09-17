@@ -22,7 +22,7 @@ class Spoilers {
 	}
 
 	/**
-	 * Parses the <spoiler> tag.
+	 * Parses the {{Spoiler}} tag.
 	 *
 	 * @access	public
 	 * @param	Parser	$parser
@@ -32,7 +32,6 @@ class Spoilers {
 	 */
 	static public function spoilerMagicWord( Parser &$parser, PPFrame $frame, array $args ) {
 		$params = self::extractOptions( $args, $frame );
-		print_r($params);
 		$parser->getOutput()->addModules( 'ext.spoilers' );
 		$showText	=	isset( $params['show'] ) ? " data-showtext='" . htmlentities( $params['show'], ENT_QUOTES ) . "'" : "";
 		$hideText	=	isset( $params['hide'] ) ? " data-hidetext='" . htmlentities( $params['hide'], ENT_QUOTES ) . "'" : "";
