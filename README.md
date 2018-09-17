@@ -15,6 +15,6 @@ Usage Example
 ```
 {{#spoiler:hide=hide_message|spoiler_text}}
 {{#spoiler:show=show_message|spoiler_text}}
-{{#spoiler:show=show_message hide=hide_message|spoiler_text}}
+{{#spoiler:show=show_message|hide=hide_message|spoiler_text}}
 {{#spoiler:spoiler_text}}
 ```
