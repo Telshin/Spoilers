@@ -1,6 +1,6 @@
 {
 	"name": "Spoilers",
-	"version": "2.0",
+	"version": "2.1",
 	"author": [
 		"Tim \"Telshin\" Aldridge",
 		"Kris \"Developaws\" Blair"
@@ -18,10 +18,10 @@
 		]
 	},
 	"ExtensionMessagesFiles": {
-		"SpoilersMagic": "Spoilers.i18n.magic.php"
+		"SpoilersMagic": "SpoilersI18nMagic.php"
 	},
 	"AutoloadClasses": {
-		"Spoilers": "Spoilers.hooks.php"
+		"Spoilers\\SpoilersHooks": "SpoilersHooks.php"
 	},
 	"ResourceModules": {
 		"ext.spoilers": {
@@ -46,7 +46,7 @@
 	},
 	"Hooks": {
 		"ParserFirstCallInit": [
-			"Spoilers::onParserFirstCallInit"
+			"Spoilers\\SpoilersHooks::onParserFirstCallInit"
 		]
 	},
 	"manifest_version": 1
