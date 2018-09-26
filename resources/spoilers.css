@@ -3,6 +3,16 @@
 	background-color: #EEE;
 	padding: 3px;
 	display: none;
+	color: #000;
+}
+
+.spoilers-body h1,
+.spoilers-body h2,
+.spoilers-body h3,
+.spoilers-body h4,
+.spoilers-body h5,
+.spoilers-body h6 {
+	color: #000;
 }
 
 .spoilers-button {
@@ -16,9 +26,10 @@
 	border-radius: 5px;
 	padding: 3px 10px;
 	transition: 0.1s background-position linear;
+	color: #000;
 }
 
 .spoilers-button:hover {
-	background-position: 0 -6px;
+	background: #d2d2d2;
 	cursor: pointer;
 }

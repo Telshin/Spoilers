@@ -10,11 +10,19 @@ To install this extension, add the following lines to the end of the LocalSettin
 wfLoadExtension('Spoilers');
 ```
 
-Usage Example
+Usage Example for `{{#spoiler}}`
 -------------
 ```
 {{#spoiler:hide=hide_message|spoiler_text}}
 {{#spoiler:show=show_message|spoiler_text}}
 {{#spoiler:show=show_message|hide=hide_message|spoiler_text}}
 {{#spoiler:spoiler_text}}
+```
+
+Usage Example for `<spoiler>`
+-------------
+```
+<spoiler show="show" hide="hide">
+<h1>SPOILER!!</h1>
+</spoiler>
 ```
