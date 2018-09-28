@@ -79,7 +79,7 @@ class SpoilersHooks {
 
 		return "<div class='spoilers'{$showText}{$hideText}>" .
 				"<span class='spoilers-button'></span>" .
-				"<div class='spoilers-body' style='display:none;'>{$text}</div>".
+				"<div class='spoilers-body' style='display:none;'>{$text}</div>" .
 				"</div>";
 	}
 	/**
