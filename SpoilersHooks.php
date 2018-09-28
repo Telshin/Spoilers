@@ -74,8 +74,14 @@ class SpoilersHooks {
 	 * @return string
 	 */
 	private static function generateOutput( $text, $params ) {
-		$showText =	isset( $params['show'] ) ? " data-showtext='" . htmlentities( $params['show'], ENT_QUOTES ) . "'" : "";
-		$hideText =	isset( $params['hide'] ) ? " data-hidetext='" . htmlentities( $params['hide'], ENT_QUOTES ) . "'" : "";
+		$showText = "";
+		if ( isset( $params['show'] ) ) {
+			$showText = " data-showtext='" . htmlentities( $params['show'], ENT_QUOTES ) . "'";
+		}
+		$hideText = "";
+		if ( isset( $params['hide'] ) ) {
+			$showText = " data-hidetext='" . htmlentities( $params['hide'], ENT_QUOTES ) . "'";
+		}
 
 		return "<div class='spoilers'{$showText}{$hideText}>" .
 				"<span class='spoilers-button'></span>" .
