@@ -22,7 +22,7 @@ Usage Example for `{{#spoiler}}`
 Usage Example for `<spoiler>`
 -------------
 ```
-<spoiler show="show" hide="hide">
-<h1>SPOILER!!</h1>
+<spoiler show="show_message" hide="hide_message">
+spoiler_text
 </spoiler>
 ```

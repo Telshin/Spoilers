@@ -17,7 +17,7 @@ class SpoilersHooks {
 	/**
 	 * Sets up this extensions parser functions.
 	 *
-	 * @access		public
+	 * @access			public
 	 * @param Parser	&$parser
 	 * @return boolean	true
 	 */
@@ -78,9 +78,9 @@ class SpoilersHooks {
 		$hideText =	isset( $params['hide'] ) ? " data-hidetext='" . htmlentities( $params['hide'], ENT_QUOTES ) . "'" : "";
 
 		return "<div class='spoilers'{$showText}{$hideText}>" .
-			   "<span class='spoilers-button'></span>" .
-			   "<div class='spoilers-body' style='display:none;'>{$text}</div>".
-			   "</div>";
+				"<span class='spoilers-button'></span>" .
+				"<div class='spoilers-body' style='display:none;'>{$text}</div>".
+				"</div>";
 	}
 	/**
 	 * Extracts a set of parameters
