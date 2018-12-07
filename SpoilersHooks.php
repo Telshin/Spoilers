@@ -80,7 +80,7 @@ class SpoilersHooks {
 		}
 		$hideText = "";
 		if ( isset( $params['hide'] ) ) {
-			$showText = " data-hidetext='" . htmlentities( $params['hide'], ENT_QUOTES ) . "'";
+			$hideText = " data-hidetext='" . htmlentities( $params['hide'], ENT_QUOTES ) . "'";
 		}
 
 		return "<div class='spoilers'{$showText}{$hideText}>" .
