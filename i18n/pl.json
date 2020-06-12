@@ -5,7 +5,7 @@
 		]
 	},
 	"spoilers": "Spoilery",
-	"spoilers_description": "Znacznik spoiler – &lt;spoiler show=\"showMessage\" hide=\"hideMessage\"&gt;Spoiler Text&lt;/spoiler&gt;",
+	"spoilers_description": "Znacznik spoiler – &lt;spoiler show=\"showMessage\" hide=\"hideMessage\"&gt;Tekst spoilera&lt;/spoiler&gt;",
 	"spoilers_show_default": "Pokaż spoiler",
 	"spoilers_hide_default": "Ukryj spoiler"
 }
