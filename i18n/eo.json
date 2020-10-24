@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Tim Aldridge",
+			"Kris Blair"
+		]
+	},
+	"spoilers": "Malkaŝumo",
+	"spoilers_description": "Malkaŝuma etikedo - &lt;spoiler show=\"showMessage\" hide=\"hideMessage\"&gt;Teksto de malkaŝumo&lt;/spoiler&gt;",
+	"spoilers_show_default": "Montri malkaŝumon",
+	"spoilers_hide_default": "Kaŝi malkaŝumon"
+}
