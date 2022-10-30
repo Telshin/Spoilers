@@ -39,7 +39,7 @@ class SpoilersHooks {
 	 */
 	public static function spoilerMagicWord( Parser &$parser, PPFrame $frame, array $args ) {
 		$params = self::extractOptions( $args, $frame );
-		$parser->getOutput()->addModules( 'ext.spoilers' );
+		$parser->getOutput()->addModules( ['ext.spoilers'] );
 		$output = self::generateOutput( $frame->expand( $params['text'] ), $params );
 
 		return [
