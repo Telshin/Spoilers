@@ -1,13 +1,12 @@
 {
-        "@metadata": {
-                "authors": [
-                        "Tim Aldridge",
-                        "Kris Blair"
-                ]
-        },
-        "spoilers": "Spoiler",
-        "spoilers_description": "Spoilertag - &lt;spoiler show=\"showMessage\" hide=\"hideMessage\"&gt;Spoilertekst&lt;/spoiler&gt;",
-        "spoilers_show_default": "Laat spoiler zien",
-        "spoilers_hide_default": "Verberg spoiler"
+	"@metadata": {
+		"authors": [
+			"Tim Aldridge",
+			"Kris Blair"
+		]
+	},
+	"spoilers": "Spoiler",
+	"spoilers_description": "Spoilertag - &lt;spoiler show=\"showMessage\" hide=\"hideMessage\"&gt;Spoilertekst&lt;/spoiler&gt;",
+	"spoilers_show_default": "Laat spoiler zien",
+	"spoilers_hide_default": "Verberg spoiler"
 }
-

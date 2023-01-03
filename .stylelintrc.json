@@ -1,0 +1,8 @@
+{
+	"extends": "stylelint-config-wikimedia",
+	"rules": {
+		"function-name-case": null,
+		"function-no-unknown": null,
+		"function-parentheses-space-inside": null
+	}
+}
