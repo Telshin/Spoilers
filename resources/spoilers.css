@@ -1,6 +1,6 @@
 .spoilers-body {
 	border: 1px dashed #000;
-	background-color: #EEE;
+	background-color: #eee;
 	padding: 3px;
 	display: none;
 	color: #000;
@@ -16,11 +16,11 @@
 }
 
 .spoilers-button {
-	background: #AAA;
-	background: -moz-linear-gradient(top, #EEE, #AAA);
-	background: -webkit-linear-gradient(top, #EEE, #AAA);
-	background: -o-linear-gradient(top, #EEE, #AAA);
-	background: linear-gradient(to bottom, #EEE, #AAA);
+	background: #aaa;
+	background: -moz-linear-gradient(top, #eee, #aaa);
+	background: -webkit-linear-gradient(top, #eee, #aaa);
+	background: -o-linear-gradient(top, #eee, #aaa);
+	background: linear-gradient(to bottom, #eee, #aaa);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#EEE', endColorstr='#AAA', GradientType=0);
 	border: 1px solid #999;
 	border-radius: 5px;
@@ -30,6 +30,6 @@
 }
 
 .spoilers-button:hover {
-	background: #D2D2D2;
+	background: #d2d2d2;
 	cursor: pointer;
 }
