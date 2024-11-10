@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Joseph"
+		]
+	},
+	"spoilers": "ネタバレ",
+	"spoilers_description": "ネタバレタグ - &lt;spoiler show=\"showMessage\" hide=\"hideMessage\"&gt;ネタバレテキスト&lt;/spoiler&gt;",
+	"spoilers_show_default": "ネタバレを表示",
+	"spoilers_hide_default": "ネタバレを隠す"
+}

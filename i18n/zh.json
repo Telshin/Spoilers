@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Joseph"
+		]
+	},
+	"spoilers": "劇透",
+	"spoilers_description": "劇透标签 – &lt;spoiler show=\"showMessage\" hide=\"hideMessage\"&gt;劇透文字&lt;/spoiler&gt;",
+	"spoilers_show_default": "显示劇透",
+	"spoilers_hide_default": "隐藏劇透"
+}
