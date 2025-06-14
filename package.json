@@ -10,7 +10,7 @@
 			"name": "Telshin"
 		}
 	],
-	"version": "2.2.4",
+	"version": "2.2.6",
 	"private": true,
 	"scripts": {
 		"test": "grunt test"
