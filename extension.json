@@ -1,6 +1,6 @@
 {
 	"name": "Spoilers",
-	"version": "2.2.9",
+	"version": "3.0.0",
 	"author": [
 		"Tim \"Telshin\" Aldridge",
 		"Kris \"Developaws\" Blair"
@@ -10,7 +10,7 @@
 	"license-name": "MIT",
 	"type": "parserhook",
 	"requires": {
-		"MediaWiki": ">= 1.27.0"
+		"MediaWiki": ">= 1.41.0"
 	},
 	"MessagesDirs": {
 		"Spoilers": [
