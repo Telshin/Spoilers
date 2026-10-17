@@ -3,6 +3,6 @@
 	"rules": {
 		"function-name-case": null,
 		"function-no-unknown": null,
-		"function-parentheses-space-inside": null
+		"@stylistic/function-parentheses-space-inside": null
 	}
 }

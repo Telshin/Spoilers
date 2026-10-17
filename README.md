@@ -4,6 +4,8 @@ MediaWiki extension that allows for spoiler tags that will hide a block of text.
 
 Installation
 ------------
+Requires MediaWiki 1.41 or later.
+
 To install this extension, add the following lines to the end of the LocalSettings.php file:
 ```
 //Spoilers
